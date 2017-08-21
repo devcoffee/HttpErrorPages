@@ -20,8 +20,8 @@ return array (
         
         // http 404 not found
         '404' => array (
-                'title' => 'Recurso Não Encontrado',
-	        'message'=>'Oops! Não conseguimos encontrar o recurso, mas talvez ele esteja disponível denovo no futuro'	
+                'title' => 'Página Não Encontrada',
+	        'message'=>'Oops! Não conseguimos encontrar a página que você estava procurando.'	
         ),
         
         // internal server error
