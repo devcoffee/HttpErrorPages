@@ -5,47 +5,47 @@ return array (
         // =======================================================
 
         '400' => array (
-                'title' => 'Bad Request',
-                'message' => 'The server cannot process the request due to something that is perceived to be a client error.' 
+                'title' => 'Requisição inválida',
+	        'message' => 'Oops! Não conseguimos processar a requisição.'	
         ),
         '401' => array (
-                'title' => 'Unauthorized',
-                'message' => 'The requested resource requires an authentication.'
+                'title' => 'Não Autorizado',
+                'message' => 'Oops! O recurso requer uma autenticação.'
         ),
 
         '403' => array (
-                'title' => 'Access Denied',
-                'message' => 'The requested resource requires an authentication.' 
+                'title' => 'Acesso Negado',
+                'message' => 'Oops! O recurso requer uma autenticação.' 
         ),
         
         // http 404 not found
         '404' => array (
-                'title' => 'Resource not found',
-                'message' => 'The requested resource could not be found but may be available again in the future.' 
+                'title' => 'Recurso Não Encontrado',
+	        'message'=>'Oops! Não conseguimos encontrar o recurso, mas talvez ele esteja disponível denovo no futuro'	
         ),
         
         // internal server error
         '500' => array (
-                'title' => 'Webservice currently unavailable',
-                'message' => "An unexpected condition was encountered.\nOur service team has been dispatched to bring it back online." 
+                'title' => 'Webservice Atualmente Não Disponível',
+                'message' => "Uma condição inesperada foi encontrada.\nNosso time de serviços está trabalhando para deixar isso online novamente." 
         ),
         
         // unknown http method
         '501' => array (
-                'title' => 'Not Implemented',
-                'message' => 'The Webserver cannot recognize the request method.'
+                'title' => 'Não implementado',
+		'message' => 'Oops! O Webserver não conseguiu reconhecer o método solicitado'
         ),
         
         // http proxy forward error
         '502' => array (
-                'title' => 'Webservice currently unavailable',
-                'message' => "We've got some trouble with our backend upstream cluster.\nOur service team has been dispatched to bring it back online."
+		'title' => 'Webservice atualmente indisponível',
+		'message' => "Nós tivemos alguns problema com o nosso backend. Nosso time de serviços está trabalhando para deixar isso online novamente."
         ),
         
         // webserver service error
         '503' => array (
-                'title' => 'Webservice currently unavailable',
-                'message' => "We've got some trouble with our backend upstream cluster.\nOur service team has been dispatched to bring it back online."
+                'title' => 'Webservice atualmente indisponível',
+                'message' => "Nós tivemos alguns problema com o nosso backend. Nosso time de serviços está trabalhando para deixar isso online novamente."
         ),
         
         // CUSTOM ERROR CODES
@@ -53,19 +53,19 @@ return array (
 
         // webserver origin error
         '520' => array(
-            'title' => 'Origin Error - Unknown Host',
-            'message' => 'The requested hostname is not routed. Use only hostnames to access resources.'
+            'title' => 'Origin Error - Host Desconhecido',
+            'message' => 'O hostname requisitado não é roteado. Use apenas hostnames para acessar recursos.'
         ),
         
         // webserver down error
         '521' => array (
-                'title' => 'Webservice currently unavailable',
-                'message' => "We've got some trouble with our backend upstream cluster.\nOur service team has been dispatched to bring it back online."
+                'title' => 'Webservice atualmente indisponível',
+                'message' => "Nós tivemos alguns problema com o nosso backend. Nosso time de serviços está trabalhando para deixar isso online novamente."
         ),
         
         // maintenance
         '533' => array(
-                'title' => 'Scheduled Maintenance',
-                'message' => "This site is currently down for maintenance.\nOur service team is working hard to bring it back online soon."                
+                'title' => 'Estamos em manutenção',
+                'message' => "O site está offline para manutenção.\nNosso time está trabalhando para reestabelecer o serviço em breve."                
         )
 );
