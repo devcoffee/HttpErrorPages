@@ -14,20 +14,31 @@
 
 <body>
     <div class="cover">
-        <h1><big>ERRO<?php echo $v_code; ?></big></h1>
-        <h1><?php echo $v_title; ?></h1>
-        <p class="lead"><?php echo $v_message; ?></p>
+        <div>
+            <h1><big>ERRO<?php echo $v_code; ?></big></h1>
+            <h1><?php echo $v_title; ?></h1>
+            <p class="lead"><?php echo $v_message; ?></p>
+        </div>
         <div class="anchor">
             <a class="btn" href="http://dev05.devcoffee.com.br">Ir para a página inicial</a>
         </div>
+        <?php if (!empty($v_footer)){ ?>
+        <footer>
+            <?php echo $v_footer; ?>
+        </footer>
+        <?php } ?>
     </div>
-    
-    
-
-    <?php if (!empty($v_footer)){ ?>
-    <footer>
-        <p><?php echo $v_footer; ?></p>
-    </footer>
-    <?php } ?>
+    <script>
+        var img = document.getElementById("brerp");
+        img.addEventListener("mouseover",function(){
+            img.src = "../assets/images/icon_brerp_cor.png";
+        });
+        img.addEventListener("mouseout",function(){
+            img.src = "../assets/images/icon_brerp.png";
+        });
+        img.addEventListener("click",function(){
+            window.location.href = "http://docs.devcoffee.com.br";
+        });
+    </script>
 </body>
 </html>
